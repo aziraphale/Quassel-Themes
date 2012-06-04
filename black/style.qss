@@ -63,6 +63,23 @@ QMenu::item:disabled {
     color: #333;
 }
 
+QMenuBar {
+    background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #444, stop:1 #111);
+    color: #ccc;
+}
+QMenuBar::item {
+    background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #666, stop:1 #333);
+    color: #ccc;
+}
+QMenuBar::item:selected {
+    background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #777, stop:1 #444);
+    color: #ccc;
+}
+QMenuBar::item:pressed {
+    background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #444, stop:1 #777);
+    color: #ccc;
+}
+
 
 SettingsPage QTreeView { background-color: #111; show-decoration-selected: 1; }
 SettingsPage QTreeView::item:hover { background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop:0 #333, stop: 1 #000); border-radius: 5px; }
